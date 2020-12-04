@@ -111,7 +111,7 @@ import scalapb.zio_grpc.ZManagedChannel
 import io.grpc.ManagedChannelBuilder
 
 val channel = ZManagedChannel(
-  ManagedChannelBuilder
+  NettyChannelBuilder
     .forAddress("localhost", 8980)
     .usePlaintext()
 )
